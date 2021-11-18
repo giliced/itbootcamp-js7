@@ -1,0 +1,61 @@
+body {
+    background: url("PozadinskaSlika.jpg");
+    background-size: cover;
+    margin: 70px;
+}
+
+h1 {
+    font-size: 45px;
+    color: #037ff0;
+}
+
+h1, h3 {
+    font-family: cursive;
+}
+
+h3 {
+    font-size: 30px;
+    color: #037ff0;
+}
+
+p, dl {
+    font-size: 20px;;
+}
+
+#MyPicture {
+    position: relative;
+}
+
+#MyPicture img {
+    position: absolute;
+    right: 10px;;
+    text-align: right;
+    border-radius: 50%;
+    width: 300px;
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+}
+
+#MyPicture img:hover {
+    width: 400px;
+}
+
+.TitleContact{
+    font-size: 20px;
+    text-align: center;
+}
+
+#ContactData {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#ContactData p {
+    float:left;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+dt{
+    margin: 10px 0;
+}
