@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>User hiring app</title>
+	</head>
+	<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<div class="col-12 col-lg-5 d-flex justify-content-between">
+				<a class="navbar-brand" href="index.html">User hiring app</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+
+			<div class="collapse navbar-collapse col-12 col-lg-7" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around col-12">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="new_user.html">New user</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="my_team.html">My team</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="users"></div>
+
+	<!-- Modal to hire -->
+	<div class="modal fade" id="hireModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Hire developer</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form id="registrationForm">
+						<p>Select dates in which you want to hire the developer</p>
+						<div class="mb-3">
+							<label for="hire_from" class="form-label">From</label>
+							<small class="text-danger" id="field_error_hire_from"></small>
+							<input type="date" class="form-control" name="hire_from" id="hire_from" required>
+						</div>
+						<div class="mb-3">
+							<label for="hire_from" class="form-label">To</label>
+							<small class="text-danger" id="field_error_hire_to"></small>
+							<input type="date" class="form-control" name="hire_to" id="hire_to" required>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary developerCTA" id="hireDev">Hire developer</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END OF MODAL HIRE -->
+
+	<footer class="col-12 bg-dark d-flex justify-content-center align-items-center" style="height: 100px;">
+		<p class="text-white">Copyright &copy;UserApp</p>
+	</footer>
+
+
+
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/core/users.js"></script>
+	<script type="text/javascript" src="js/core/teams.js"></script>
+	<script type="text/javascript" src="js/homepage.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	</body>
+</html>

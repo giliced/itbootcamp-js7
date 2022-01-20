@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>User hiring app</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    </head>
+    <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="col-12 col-lg-5 d-flex justify-content-between">
+                <a class="navbar-brand" href="index.html">User hiring app</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse col-12 col-lg-7" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around col-12">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="new_user.html">New user</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="my_team.html">My team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container min-vh-100">
+        <form id="registrationForm" class="mt-5 mb-5">
+            <h1 class="pt-2 pb-2">User creation</h1>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <small class="text-danger" id="field_error_name"></small>
+                <input type="text" class="form-control" name="name" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <small class="text-danger" id="field_error_email"></small>
+                <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <small class="text-danger" id="field_error_phone"></small>
+                <input type="text" class="form-control" name="phone" id="phone" required>
+            </div>
+            <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <small class="text-danger" id="field_error_location"></small>
+                <input type="text" class="form-control" name="location" id="location" required>
+            </div>
+            <div class="mb-3">
+                <label for="profileImage" class="form-label">Profile image</label>
+                <small class="text-danger" id="field_error_profileImage"></small>
+                <input type="text" class="form-control" name="profileImage" id="profileImage" required>
+            </div>
+            <div class="mb-3">
+                <label for="pricePerHour" class="form-label">Price per hour</label>
+                <small class="text-danger" id="field_error_pricePerHour"></small>
+                <input type="number" min="0" class="form-control" name="pricePerHour" id="pricePerHour"required>
+            </div>
+            <div class="mb-3">
+                <label for="technology" class="form-label">Technology</label>
+                <small class="text-danger" id="field_error_technology"></small>
+                <select class="form-control" name="technology" id="technology"required>
+                    <option>PHP</option>
+                    <option>JS</option>
+                    <option>C#</option>
+                    <option>C++</option>
+                    <option>C</option>
+                    <option>Python</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <small class="text-danger" id="field_error_description"></small>
+                <textarea class="form-control" name="description" id="description"required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="experience" class="form-label">Years of experience</label>
+                <small class="text-danger" id="field_error_experience"></small>
+                <input class="form-control" type="number" min="0" name="experience" id="experience" required/>
+            </div>
+
+            <div class="mb-3">
+                <label for="language" class="form-label">Native language</label>
+                <small class="text-danger" id="field_error_language"></small>
+                <select name="language" id="language" class="form-control" required>
+                    <option>English</option>
+                    <option>Serbian</option>
+                    <option>Bosnian</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="linkedin" class="form-label">Linkedin</label>
+                <small class="text-danger" id="field_error_linkedin"></small>
+                <input class="form-control" type="text" name="linkedin" id="linkedin">
+            </div>
+
+            <button id="registerUser" class="btn btn-info">Register</button>
+
+        </form>
+    </div>
+
+    <footer class="col-12 bg-dark d-flex justify-content-center align-items-center" style="height: 100px;">
+        <p class="text-white">Copyright &copy;UserApp</p>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/core/users.js"></script>
+    <script type="text/javascript" src="js/userManagment.js"></script>
+    </body>
+</html>
